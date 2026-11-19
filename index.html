@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sourav Das — Digital Marketing & Social Media Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0c0e;--surface:#16161a;--text:#f4f4f1;--muted:#9a9aa3;--line:#2a2a30;--accent:#c8ff3d;--on-accent:#0c0c0e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f5f0;--surface:#fff;--text:#121214;--muted:#62626b;--line:#dcdbd3;--accent:#121214;--on-accent:#f6f5f0}}
+:root[data-theme="light"]{--bg:#f6f5f0;--surface:#fff;--text:#121214;--muted:#62626b;--line:#dcdbd3;--accent:#121214;--on-accent:#f6f5f0}
+:root[data-theme="dark"]{--bg:#0c0c0e;--surface:#16161a;--text:#f4f4f1;--muted:#9a9aa3;--line:#2a2a30;--accent:#c8ff3d;--on-accent:#0c0c0e}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.brand{font-family:"Space Grotesk",Inter,system-ui,sans-serif;letter-spacing:-.03em;line-height:1.05}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;font-size:20px}.brand b{color:var(--accent)}
+.links{display:flex;gap:28px;font-size:14px;color:var(--muted)}
+.links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--on-accent);padding:12px 22px;border-radius:999px;font-weight:500;font-size:14px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.hero{padding:96px 0 64px}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--muted);margin-bottom:28px}
+.tag i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:8px}
+h1{font-size:clamp(44px,9vw,116px);font-weight:700;max-width:12ch}
+h1 span{color:var(--accent)}
+.hero p{max-width:560px;color:var(--muted);font-size:18px;margin:28px 0 36px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:72px}
+.stat{background:var(--surface);padding:28px}
+.stat b{display:block;font-family:"Space Grotesk",sans-serif;font-size:40px;letter-spacing:-.03em}
+.stat span{color:var(--muted);font-size:14px}
+.marquee{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:18px 0;margin:40px 0}
+.marquee div{display:inline-block;animation:slide 28s linear infinite;font-family:"Space Grotesk",sans-serif;font-size:28px;color:var(--muted)}
+.marquee em{color:var(--accent);font-style:normal;margin:0 22px}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee div{animation:none}}
+section{padding:80px 0}
+.eyebrow{color:var(--accent);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+h2{font-size:clamp(32px,5vw,56px);margin-bottom:44px;max-width:16ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--accent);transform:translateY(-4px)}
+.card .n{color:var(--accent);font-family:"Space Grotesk",sans-serif;font-size:14px;margin-bottom:40px}
+.card h3{font-size:24px;margin-bottom:10px}
+.card p,.card li{color:var(--muted);font-size:15px}
+.card ul{padding-left:18px}
+.work{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+.work .card.big{min-height:340px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(160deg,var(--surface),color-mix(in srgb,var(--accent) 14%,var(--surface)))}
+.big .num{font-family:"Space Grotesk",sans-serif;font-size:clamp(48px,8vw,88px);font-weight:700;color:var(--accent);line-height:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12px;color:var(--muted)}
+.tl{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:32px 0;border-bottom:1px solid var(--line)}
+.row time{color:var(--muted);font-size:14px}
+.row h3{font-size:24px;margin-bottom:4px}
+.row .co{color:var(--accent);font-size:14px;margin-bottom:14px}
+.row ul{padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:6px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.contact{text-align:center;padding:110px 0}
+.contact h2{margin:0 auto 32px;max-width:14ch}
+.contact .mail{display:block;font-family:"Space Grotesk",sans-serif;font-size:clamp(20px,4vw,40px);margin-top:28px;word-break:break-all}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.links{display:none}.work{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:8px}.hero{padding-top:56px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top">sourav<b>.</b>das</a>
+<div class="links"><a href="#services">Services</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a></div>
+<a class="btn" href="#contact">Let’s talk</a>
+</div></nav>
+
+<header class="wrap hero" id="top">
+<div class="tag"><i></i>Open to internships &amp; marketing roles</div>
+<h1>Content that makes brands <span>go premium.</span></h1>
+<p>I’m Sourav Das — a digital marketing and social media manager who turns gaming, luxury and studio brands into scroll-stopping social presences.</p>
+<div class="cta"><a class="btn" href="#work">See my work ↗</a><a class="btn ghost" href="mailto:gyou27831@gmail.com">Email me</a></div>
+<div class="stats">
+<div class="stat"><b>433K+</b><span>Total YouTube views</span></div>
+<div class="stat"><b>1,760+</b><span>Channel subscribers</span></div>
+<div class="stat"><b>2</b><span>Brand internships</span></div>
+<div class="stat"><b>6 mo</b><span>Professional experience</span></div>
+</div>
+</header>
+
+<div class="marquee"><div>
+<span>Social Media</span><em>✦</em><span>Content Strategy</span><em>✦</em><span>Reels &amp; Shorts</span><em>✦</em><span>Copywriting</span><em>✦</em><span>Analytics</span><em>✦</em><span>Meta Ads</span><em>✦</em>
+<span>Social Media</span><em>✦</em><span>Content Strategy</span><em>✦</em><span>Reels &amp; Shorts</span><em>✦</em><span>Copywriting</span><em>✦</em><span>Analytics</span><em>✦</em><span>Meta Ads</span><em>✦</em>
+</div></div>
+
+<section id="services"><div class="wrap">
+<p class="eyebrow">What I do</p><h2>Services built around attention.</h2>
+<div class="grid">
+<div class="card"><div class="n">01</div><h3>Social Media Management</h3><p>Full management of Instagram and Facebook — planning, posting and keeping the brand consistent.</p></div>
+<div class="card"><div class="n">02</div><h3>Content &amp; Creative Strategy</h3><p>Posts, reels, captions and creative concepts that fit the brand’s tone, from luxury events to gaming.</p></div>
+<div class="card"><div class="n">03</div><h3>Video &amp; Short-form</h3><p>Shorts and long-form video edited with CapCut and Canva, with tested hooks, titles and thumbnails.</p></div>
+<div class="card"><div class="n">04</div><h3>Analytics &amp; Growth</h3><p>Reading reach, engagement, CTR and audience behaviour to decide what to post next.</p></div>
+</div></div></section>
+
+<section id="work"><div class="wrap">
+<p class="eyebrow">Selected work</p><h2>Proof, not promises.</h2>
+<div class="work">
+<div class="card big">
+<div class="num">433K+</div>
+<h3 style="margin-top:12px">DC GAMING 99 — YouTube</h3>
+<p>Founded and ran a gaming channel solo, growing it past 1,760 subscribers. Created Shorts and long-form/live content, and studied retention and analytics to improve every upload.</p>
+<div class="chips"><span>Shorts</span><span>Live</span><span>Thumbnails</span><span>Retention</span></div>
+</div>
+<div style="display:grid;gap:16px">
+<div class="card"><h3>GameGenesis</h3><p>Rebuilt the studio’s social look to premium quality, reaching three months’ worth of reach in a single month, and ran the content and marketing plan around its IGDC visit.</p></div>
+<div class="card"><h3>EUBYKRISTA</h3><p>Created posts, reels and captions for a premium luxury wedding and events brand on Instagram and Facebook.</p></div>
+</div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<p class="eyebrow">Experience</p><h2>Where I’ve worked.</h2>
+<div class="tl">
+<div class="row"><time>Sep 2026 — Dec 2026</time><div>
+<h3>Digital Marketing Intern</h3><div class="co">GameGenesis · Game development studio</div>
+<ul><li>Changed all social media content and look to premium quality.</li><li>Achieved three months’ worth of reach in one month.</li><li>Led the team.</li><li>Included by seniors in business development and services decisions.</li><li>Managed all posts and marketing plans (and contributed the ideas) when the studio attended the India Game Developer Conference (IGDC).</li></ul></div></div>
+<div class="row"><time>Jun 2026 — Aug 2026</time><div>
+<h3>Social Media Management Intern</h3><div class="co">Exquisite Unison by Krista Pvt. Ltd. (EUBYKRISTA)</div>
+<ul><li>Managed and developed content for Instagram and Facebook.</li><li>Created posts, reels, captions and concepts for a premium luxury wedding and events brand.</li><li>Developed content ideas and strategies to improve presentation, engagement and consistency.</li><li>Produced creatives and video with Canva, CapCut, Adobe Express and AI tools.</li><li>Analysed reach, engagement, CTR and audience behaviour.</li></ul></div></div>
+<div class="row"><time>Ongoing</time><div>
+<h3>Founder &amp; Content Creator</h3><div class="co">DC GAMING 99 · YouTube</div>
+<ul><li>Built and managed the channel independently to 1,760+ subscribers and 433,000+ views.</li><li>Tested content formats, hooks, titles, thumbnails and publishing strategies.</li></ul></div></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<p class="eyebrow">Toolkit</p><h2>Skills &amp; tools.</h2>
+<div class="skills">
+<div class="card"><h3>Digital Marketing</h3><div class="chips"><span>Social Media Marketing</span><span>Content Strategy</span><span>SEO</span><span>Audience Targeting</span><span>CTR</span><span>Analytics</span></div></div>
+<div class="card"><h3>Content &amp; Creative</h3><div class="chips"><span>Social Content</span><span>Copywriting</span><span>Creative Strategy</span><span>Content Calendars</span></div></div>
+<div class="card"><h3>Platforms &amp; Tools</h3><div class="chips"><span>Instagram</span><span>Facebook</span><span>YouTube</span><span>Canva</span><span>CapCut</span><span>Adobe Express</span><span>Meta Ads Manager (Basic)</span><span>ChatGPT</span><span>Claude</span></div></div>
+<div class="card"><h3>Education</h3><p>B.Com (1st sem.) — Bangabasi Evening College, Kolkata, 2026–present.<br>Higher Secondary (Commerce) — WBCHSE, 2026.</p><p style="margin-top:10px">Currently learning Google Ads and Meta Ads performance marketing.</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<p class="eyebrow">Contact</p>
+<h2>Have a brand that needs attention?</h2>
+<a class="btn" href="mailto:gyou27831@gmail.com">Start a conversation ↗</a>
+<a class="mail" href="mailto:gyou27831@gmail.com">gyou27831@gmail.com</a>
+<div class="cta" style="justify-content:center;margin-top:28px">
+<a class="btn ghost" href="tel:+917384579943">+91 73845 79943</a>
+<a class="btn ghost" href="https://www.linkedin.com/in/sourav-das-7396a4384" rel="noopener">LinkedIn</a>
+</div>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Sourav Das</span><span>Digital Marketing &amp; Social Media Manager</span></div></footer>
+</body>
+</html>
